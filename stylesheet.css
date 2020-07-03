@@ -2,17 +2,52 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Lucida Grande";
+header{
+  height: 65px;
+  width: 100%;
+  background-color: #776865;
+  font-size: 15px;
+  font-family: serif;
+  color: #fff;
+  height: 45px;
 }
 
-a {
-  text-decoration: none;
+.header-list{
+  display: block;
 }
 
-.clear {
-  clear: left;
+.header-list:hover {
+  background-color: #685a57;
+}
+
+.header-logo {
+  float: left;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+.header-logo:hover {
+  background-color: orange;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display:none;
+}
+
+li:hover {
+  background-color: orange;
+}
+
+li {
+  list-style: none;
+  float: right;
+  margin-right: 50px;
+  padding: 14px 25px;
 }
 
 .container {
@@ -22,188 +57,101 @@ a {
   margin: 0 auto;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* Gantikan property display ke none */
-  display:none;
-}
-
-
-
-.lesson-wrapper {
-  padding-bottom: 80px;
+.main-content {
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: #f5f2f2;
   text-align: center;
+}
+
+.contact{
+  float:left;
+  width:25%;
+}
+
+.contact-icon img{
+  width:100px;
+  height:100px;
+}
+
+.contact-icon p {
+  color: #776865;
+  font-weight: bold;
+}
+
+.text{
+  font-size: 15px;
+  color: #776865;
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 10px;
   color: #5f5d60;
 }
 
 .heading h2 {
   font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
+  border-bottom: 1px solid #776865;
 }
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
 
 .message {
   padding: 15px 40px;
-  background-color: #5dca88;
+  background-color: #f7d291;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  box-shadow: 0 7px #ffa500;
+  animation-name: example;
+  animation-duration: 7s;
+}
+
+@keyframes example {
+  from {background-color: #f7d291;}
+  to {background-color: #ffa500;}
 }
 
 .message:active {
   position: relative;
-  top: 7px;
+  top: 6px;
   box-shadow: none;
 }
 
-footer img {
-  width: 125px;
+.footer-left img {
+  width: 45px;
+  margin-top: 5px;
+}
+
+.footer-right img{
+  width:140px;
+  height:40px;
 }
 
 footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+  padding-top: 70px;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  height: 110px;
+  width: 100%;
+  background-color: #685a57;
+}
+
+.footer-left{
+  margin-top: 10px;
+  float:left;
+}
+
+.footer-right{
+  margin-top: 10px;
+  float:right;
+}
+
+.clear {
+  clear: left;
 }
